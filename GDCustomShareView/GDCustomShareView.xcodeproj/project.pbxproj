@@ -15,6 +15,7 @@
 		D72D9A041CF6C7E2002E32B9 /* GDCustomShareViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D9A031CF6C7E2002E32B9 /* GDCustomShareViewTests.m */; };
 		D72D9A0F1CF6C7E2002E32B9 /* GDCustomShareViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D9A0E1CF6C7E2002E32B9 /* GDCustomShareViewUITests.m */; };
 		D72D9A1F1CF6C89E002E32B9 /* GDShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D9A1E1CF6C89E002E32B9 /* GDShareView.m */; };
+		D72D9A221CF6CA51002E32B9 /* GDCustomShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D9A211CF6CA51002E32B9 /* GDCustomShareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		D72D9A101CF6C7E2002E32B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D72D9A1D1CF6C89E002E32B9 /* GDShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDShareView.h; sourceTree = "<group>"; };
 		D72D9A1E1CF6C89E002E32B9 /* GDShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDShareView.m; sourceTree = "<group>"; };
+		D72D9A201CF6CA51002E32B9 /* GDCustomShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCustomShareView.h; sourceTree = "<group>"; };
+		D72D9A211CF6CA51002E32B9 /* GDCustomShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCustomShareView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 			children = (
 				D72D9A1D1CF6C89E002E32B9 /* GDShareView.h */,
 				D72D9A1E1CF6C89E002E32B9 /* GDShareView.m */,
+				D72D9A201CF6CA51002E32B9 /* GDCustomShareView.h */,
+				D72D9A211CF6CA51002E32B9 /* GDCustomShareView.m */,
 			);
 			path = GDShareView;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				D72D9A1F1CF6C89E002E32B9 /* GDShareView.m in Sources */,
 				D72D99EE1CF6C7E2002E32B9 /* AppDelegate.m in Sources */,
 				D72D99EB1CF6C7E2002E32B9 /* main.m in Sources */,
+				D72D9A221CF6CA51002E32B9 /* GDCustomShareView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
