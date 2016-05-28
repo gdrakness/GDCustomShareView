@@ -45,7 +45,7 @@
 //取消
 @property (nonatomic, strong) UIButton *cancleButton;
 //是否显示滚动条
-@property (nonatomic, assign) BOOL showHorizontalScrollIndicator;
+@property (nonatomic, assign) BOOL showsHorizontalScrollIndicator;
 //代理
 @property (nonatomic, assign) id <GDCustomShareViewDelegate>delegate;
 
@@ -53,4 +53,23 @@
 
 -(float)getBoderViewHeight:(NSArray *)shareAry firstCount:(NSInteger)count;
 
++(NSArray *)shareWeiboArr;
+
++(NSArray *)shareWeixinArr;
+
++(NSArray *)shareQQArr;
+
++(NSArray *)shareTaobaoArr;
+
++(NSArray *)shareGuanjiaArr;
+
+- (GDCustomShareView *)addWeiboShareView;
+
+- (GDCustomShareView *)addWeixinShareView;
+
+- (GDCustomShareView *)addQQShareView;
+
+- (GDCustomShareView *)addTaobaoShareView;
+
+- (GDCustomShareView *)addGuanjiaShareView;
 @end

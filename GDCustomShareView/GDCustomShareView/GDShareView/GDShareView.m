@@ -27,7 +27,8 @@
         _iconWidth = IconWidth;
         _titleSize = TitleSize;
         _titleColor = TitleColor;
-        _titleSpace = LastlySpace;
+        _titleSpace = TitleSpace;
+        _lastySpace = LastlySpace;
         _horizontalSpace = HorizontalSpace;
         
         //设置当前ScrollView的高度
@@ -54,7 +55,7 @@
     }
     
     //设置代理
-    self.delegate = delegate;
+    _myDelegate = delegate;
     
     //设置当前ScrollView的contentSize
     if (shareAry.count > 0) {
@@ -85,6 +86,7 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake((view.frame.size.width - iconImage.size.width)/2, 0,iconImage.size.width ,iconImage.size.height);
+    button.titleLabel.font = [UIFont systemFontOfSize:_titleSize];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
     
@@ -110,8 +112,8 @@
 
 -(void)buttonAction:(UIButton *)sender{
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(shareScrollViewButtonAction:title:)]) {
-        [self.delegate shareScrollViewButtonAction:self title:sender];
+    if (_myDelegate && [_myDelegate respondsToSelector:@selector(shareScrollViewButtonAction:title:)]) {
+        [_myDelegate shareScrollViewButtonAction:self title:sender.titleLabel.text];
     }
 }
 @end

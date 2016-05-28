@@ -35,7 +35,7 @@
 //横向间距
 @property (nonatomic, assign) float horizontalSpace;
 
-@property (nonatomic, assign) id <GDShareViewDelegate>delegate;
+@property (nonatomic, assign) id <GDShareViewDelegate>myDelegate;
 
 -(void)setShareAry:(NSArray *)shareAry delegate:(id)delegate;
 
